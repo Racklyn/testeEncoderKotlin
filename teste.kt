@@ -366,6 +366,6 @@ val byteEncoder: Map<Int, String> by lazy {
     }
 }
 
-internal val byteDecoder by lazy {
+val byteDecoder by lazy {
     byteEncoder.entries.associateBy({ it.value }) { it.key }
 }
